@@ -1,0 +1,24 @@
+/** Controlador */
+ @GetMapping("/idioma")
+	 public String idioma(@RequestParam String idioma) {
+		 if(idioma.equals(Idioma.EN.toString())) {
+			 return "redirect:/coches?lang=en";
+		 }else {
+			 return "redirect:/coches?lang=es";
+		 }
+	 }
+
+<!-- thyemelaf -->
+
+<div th:fragment="idioma">
+    <form method="get" action="/idioma">
+        <select name="idioma" id="idioma" required> 
+            <option value=""><span th:text="#{titulo.idioma}"></option>
+            <option th:each="i : ${idiomas}" th:value="${i}" th:text="${i}"></option>
+        </select>
+        <button type="submit"><span th:text="#{boton.idioma}"></span></button>
+    </form>
+</div>
+
+#configuracion
+spring.messages.basename=i18n/messages
