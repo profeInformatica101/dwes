@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HLC - Evaluación API REST</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .container {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center"><i class="fa-solid fa-code"></i> HLC - Evaluación API REST</h1>
+        <p class="text-center">Entrega final: <strong>7 de Mayo</strong></p>
+        <p class="text-center">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSf7oqjwA_tXaxGeYBZSHC7dAbgCRcaE0qYO_CVpd91U7Bd6kg/viewform" class="btn btn-primary">
+                <i class="fa-brands fa-github"></i>[Formulario]Tu usuario de GitHub
+            </a>
+        </p>
+
+        <p class="text-center">
+            <a href="https://docs.google.com/forms/d/1IRLuGleE108ir0ZtYIlNcgTLEe_3234bA7tb7eVy8VM/preview" class="btn btn-secondary">
+                <i class="fa-brands fa-github"></i> [Formulario] Repositorio  Evaluación API REST en GitHub</a>
+        </p>
+
+        <h2><i class="fa-solid fa-list-check"></i> Evaluación de Resultados de Aprendizaje</h2>
+        <p>Se evalúan los siguientes resultados de aprendizaje: <strong>RA4, RA7, RA8 y RA9</strong>. La entrega es voluntaria para subir nota.</p>
+        <p>
+            <a href="https://github.com/profeInformatica101/dwes/blob/main/ra7/Tarea%20Consumo%20API.pdf" target="_blank">
+                <i class="fa-solid fa-file-pdf"></i> Ver Tarea RA7
+            </a>
+        </p>
+
+        <h2><i class="fa-solid fa-server"></i> Desarrollo de una API REST con Spring Boot</h2>
+        <ul>
+            <li><i class="fa-solid fa-check"></i> Implementación API REST
+                <ul>
+                    <li>+(Endpoints Básicos)</li>
+                    <li>- [Recursos]</li>
+                    <li># (Modelo Dominio)</li>
+                </ul>
+            </li>
+            <li><i class="fa-solid fa-bug"></i> Manejo de Errores y Validaciones</li>
+            <li><i class="fa-solid fa-vial"></i> Pruebas unitarias e integración</li>
+            <li><i class="fa-solid fa-book"></i> Documentación y versionado</li>
+            <li><i class="fa-solid fa-cloud"></i> Despliegue y Monitoreo</li>
+            <li><i class="fa-solid fa-shield-halved"></i> Seguridad y Autenticación</li>
+            <li><i class="fa-solid fa-network-wired"></i> Opcional: Peticiones REST a otra API</li>
+        </ul>
+
+        <h2><i class="fa-solid fa-clipboard-list"></i> Rúbrica de Evaluación</h2>
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Categoría</th>
+                        <th><i class="fa-solid fa-star"></i> Excelente</th>
+                        <th><i class="fa-solid fa-thumbs-up"></i> Satisfactorio</th>
+                        <th><i class="fa-solid fa-exclamation-triangle"></i> Mejorable</th>
+                        <th><i class="fa-solid fa-xmark"></i> Insuficiente</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><i class="fa-solid fa-diagram-project"></i> Diseño de la API</td>
+                        <td>Uso adecuado de sustantivos en plural, implementación RESTful completa.</td>
+                        <td>URLs mayoritariamente correctas, estilo consistente.</td>
+                        <td>Inconsistencias en estilo de nombrado.</td>
+                        <td>No sigue las convenciones de nombrado RESTful.</td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa-solid fa-handshake"></i> Métodos HTTP y CRUD</td>
+                        <td>Implementación correcta de todos los métodos con seguridad adecuada.</td>
+                        <td>Principales métodos implementados, pequeñas faltas en seguridad.</td>
+                        <td>Faltan algunos métodos o están mal aplicados.</td>
+                        <td>Implementación inadecuada de métodos CRUD.</td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa-solid fa-filter"></i> Filtrado, Ordenación y Búsqueda</td>
+                        <td>Uso avanzado de parámetros, incluyendo alias.</td>
+                        <td>Implementación básica con algunas limitaciones.</td>
+                        <td>Funcionalidad limitada o inconsistente.</td>
+                        <td>No se ofrece o es incorrecta la implementación.</td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa-solid fa-triangle-exclamation"></i> Respuestas y Manejo de Errores</td>
+                        <td>Códigos de respuesta HTTP correctos con mensajes claros.</td>
+                        <td>Respuestas generalmente correctas, algunos errores en mensajes.</td>
+                        <td>Uso inconsistente de códigos de respuesta.</td>
+                        <td>Respuestas incorrectas, falta de manejo de errores.</td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa-solid fa-book"></i> Documentación</td>
+                        <td>Documentación completa y clara de todos los endpoints.</td>
+                        <td>Documentación adecuada, mejorable en claridad o completitud.</td>
+                        <td>Documentación básica con omisiones significativas.</td>
+                        <td>Poca o ninguna documentación.</td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa-solid fa-lock"></i> Seguridad</td>
+                        <td>Uso de SSL/TLS y JWT para autenticación y autorización robustas.</td>
+                        <td>Correcto uso de JWT, mejorable en configuración de seguridad.</td>
+                        <td>Implementación básica de JWT, algunas vulnerabilidades.</td>
+                        <td>Uso inadecuado o ausencia de JWT, seguridad comprometida.</td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa-solid fa-flask"></i> Pruebas</td>
+                        <td>Cobertura de pruebas completa, incluyendo unitarias y de integración.</td>
+                        <td>Pruebas adecuadas que cubren la mayoría de funcionalidades.</td>
+                        <td>Pruebas limitadas, muchas funcionalidades no probadas.</td>
+                        <td>Ausencia de pruebas o pruebas inadecuadas.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
